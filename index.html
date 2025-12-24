@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Hub of websites</title>
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #d9fff3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0c3a29;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 0 0 15px 15px;
+    }
+
+    header h2 {
+      margin-bottom: 10px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      margin-right: 10px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #ff4d6d;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #ff4d6d;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e63950;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background: #0c3a29;
+      color: white;
+      border-radius: 15px 15px 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>Website Hub</h2>
+    <p>Search multiple top shopping sites in one place and get redirected instantly to your chosen store's results—fast and easy shopping made simple.</p>
+  </header>
+
+  <main>
+    <section class="amazon">
+      <form action="https://www.amazon.in/s">
+        <label for="amazon">Amazon :</label>
+        <input type="text" id="amazon" placeholder="Search on Amazon" name="k">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="flipkart">
+      <form action="https://www.flipkart.com/search">
+        <label for="flipkart">Flipkart :</label>
+        <input type="text" id="flipkart" placeholder="Search on Flipkart" name="q">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="myntra">
+      <form action="https://www.myntra.com/search">
+        <label for="myntra">Myntra :</label>
+        <input type="text" id="myntra" placeholder="Search on Myntra" name="rawQuery">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="meesho">
+      <form action="https://www.meesho.com/search">
+        <label for="meesho">Meesho :</label>
+        <input type="text" id="meesho" placeholder="Search on Meesho" name="q">
+        <button type="submit">Search</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Website Hub | All rights reserved</p>
+  </footer>
+</body>
+
+</html>
